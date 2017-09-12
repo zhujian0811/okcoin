@@ -30,6 +30,7 @@
     "express-winston": "^2.3.0",
     "formidable": "^1.1.1",
     "gm": "^1.23.0",
+    "https": "^1.0.0",
     "marked": "^0.3.6",
     "moment": "^2.18.1",
     "mongodb": "^2.2.25",
@@ -38,11 +39,13 @@
     "pinyin": "^2.8.3",
     "pm2": "^2.4.6",
     "qiniu": "^6.1.13",
+    "querystring": "^0.2.0",
     "sha1": "^1.1.1",
     "supervisor": "^0.12.0",
     "time-formater": "^1.0.1",
     "time-stamp": "^2.0.0",
     "underscore": "^1.8.3",
+    "url": "^0.11.0",
     "winston": "^2.3.1"
   },
   "devDependencies": {
