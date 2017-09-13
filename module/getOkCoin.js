@@ -12,6 +12,7 @@ var post_data = querystring.stringify({
 });
 
 let getOkCoin = () => {
+  console.log(122222)
   return new Promise((resolve, reject) => {
     var post_reg = https.request(post_option, function (res) {
       res.on('data', function (buffer) {
