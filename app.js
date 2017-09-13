@@ -2,7 +2,7 @@
  * @Author: zhujian 
  * @Date: 2017-08-12 13:58:13 
  * @Last Modified by: zhujian
- * @Last Modified time: 2017-09-13 08:47:14
+ * @Last Modified time: 2017-09-13 09:57:18
  */
 import db from './mongodb/db.js';
 import getOkCoin from './module/getOkCoin';
@@ -19,6 +19,6 @@ let start = () => {
       console.log(1)
       analysic(JSON.parse(res))
     })
-  }, 10000)
+  }, 3000)
 }
 start();
