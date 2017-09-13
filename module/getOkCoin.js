@@ -11,17 +11,19 @@ var post_data = querystring.stringify({
   'random': new Date().getTime(),
 });
 
-let getOkCoin = () => {
-  return new Promise((resolve, reject) => {
-    var post_reg = https.request(post_option, function (res) {
-      res.on('data', function (buffer) {
-        resolve(buffer.toString())
-      });
+class getOkCoin {
+  getOkCoin() {
+    return new Promise((resolve, reject) => {
+      var post_reg = https.request(post_option, function (res) {
+        res.on('data', function (buffer) {
+          resolve(buffer.toString())
+        });
+      })
+      post_reg.write(post_data);
+      post_reg.end();
     })
-    post_reg.write(post_data);
-    post_reg.end();
-  })
 
+  }
 }
-
-export default getOkCoin
+console.log(new getOkCoin().getOkCoin)
+export default new getOkCoin()
