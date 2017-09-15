@@ -6,7 +6,7 @@ module.exports = {
 		user: 'zhujian0811@126.com', // generated ethereal user
 		pass: 'zhujian3588000'  // generated ethereal password
 	},
-	lowPrice: 38000,
+	lowPrice: 38500,
 	diffPrice: 500,
 	timeout: 60 * 60 * 1000,
 	mailList: ['zhujian@xiaomai5.com'],
